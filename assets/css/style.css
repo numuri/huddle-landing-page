@@ -15,17 +15,20 @@
   font-size: 18px;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
+  background-image: url(../images/bg-hero-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .container {
-    margin: 30px 20px 0;
+    padding: 30px 20px 0;
 }
 
 #header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8em;
+    margin-bottom: 8em;;
 }
 
 .logo {
