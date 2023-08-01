@@ -19,7 +19,7 @@
 .container {
   padding: 30px 20px 0;
   background-image: url(../images/bg-hero-mobile.svg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8em;
+  margin-bottom: 6rem;
 }
 
 .logo {
@@ -47,21 +47,21 @@
 }
 
 .section {
-  margin: 0 15px;
+  margin: 0 15px 5rem;
 }
 
 .title {
   font-size: 1.8em;
   text-align: center;
   font-weight: 600;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
 .paragraph {
   text-align: center;
   line-height: 1.5em;
   margin: 0 15px;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .button.free {
@@ -75,5 +75,37 @@
 
 .illustration {
   width: 100%;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
+}
+
+.two,
+.three,
+.four {
+  margin: 10px 10px 2.5rem 10px;
+  padding: 5rem 2.5rem 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.illustration-gt {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.sub {
+  font-size: 1.4em;
+}
+
+.p-sub {
+  color: #aaa;
+  margin: 0;
+}
+
+.three > .p-sub,
+.four > .p-sub {
+  margin: 0 1rem;
+}
+
+.four {
+  margin-bottom: 20rem;
 }
