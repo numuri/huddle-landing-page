@@ -83,16 +83,17 @@
   margin-bottom: 3rem;
 }
 
-.two,
-.three,
-.four {
+.section.two,
+.section.three,
+.section.four {
   margin: 0 0 2.5rem 0;
   padding: 3.5rem 2.3rem 0.2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
-.illustration-gt {
+.illustration-gt,
+.illustration-fc {
   width: 100%;
   margin-bottom: 5rem;
 }
@@ -106,12 +107,9 @@
   line-height: 1.4em;
 }
 
-.four {
-  margin-bottom: 10rem;
-}
-
 .footer {
-  padding: 10rem 0 0;
+  padding: 8rem 0 0;
+  margin-top: 10rem;
   background-color: var(--veryDarkCyan);
   position: relative;
 }
@@ -204,4 +202,177 @@
   color: rgba(255, 255, 255, 0.788);
   font-size: 0.8rem;
   margin: 0 11.5%;
+}
+
+/* Responsive Breakpoint */
+@media screen and (min-width: 400px) {
+  .container {
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #header {
+    padding: 35px 3rem 0;
+  }
+
+  .logo {
+    width: 10rem;
+    height: 1.7rem;
+  }
+
+  .button {
+    background-color: white;
+    width: 165px;
+    height: 40px;
+    border-radius: 25px;
+    border: 0 solid;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 0.75em;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    color: #aaa;
+  }
+
+  .section.one {
+    display: flex;
+    gap: 3rem;
+    margin: 0 2rem 10rem;
+  }
+
+  .dekstop.one {
+    flex: 5;
+    align-self: center;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 2.5rem;
+    padding-right: 5rem;
+  }
+
+  .paragraph {
+    text-align: left;
+    padding-right: 1rem;
+  }
+
+  .button.free {
+    font-size: 0.85em;
+    width: 50%;
+    height: 50px;
+    margin: 0 0 5em;
+    background-color: var(--pink);
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .button.free:hover {
+    opacity: 60%;
+  }
+
+  .illustration {
+    width: 50%;
+  }
+
+  .section.two,
+  .section.three,
+  .section.four {
+    margin: 0 2rem 2.5rem;
+    display: flex;
+    gap: 5rem;
+  }
+
+  .illustration-gt {
+    width: 30%;
+    order: 2;
+  }
+
+  .dekstop.two {
+    align-self: center;
+    padding-left: 3rem;
+  }
+
+  .title.sub {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .paragraph.p-sub {
+    padding-right: 6rem;
+  }
+
+  .desktop.three {
+    padding-left: 5rem;
+    padding-top: 2.5rem;
+  }
+
+  .illustration-fc {
+    width: 30%;
+    margin-left: 5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .section.four {
+    margin-bottom: 10rem;
+  }
+
+  .dekstop.four {
+    padding-left: 3rem;
+    align-self: bottom;
+  }
+
+  .main-button {
+    width: 50%;
+    height: 5rem;
+    left: 24%;
+  }
+
+  .main-button .title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-right: 0;
+  }
+
+  .main-button .button.free {
+    width: 40%;
+    height: 2.5rem;
+    margin-left: 28%;
+  }
+
+  .footer_logo {
+    margin-left: 5rem;
+  }
+
+  .main-footer {
+    margin: 0 5rem;
+    display: flex;
+    gap: 5rem;
+  }
+
+  .cf {
+    flex: 3;
+  }
+
+  .sub-footer,
+  .sub-footer.sec,
+  .social-media {
+    flex: 1;
+  }
+
+  .sub-footer.sec {
+    margin-top: 0;
+  }
+
+  .social-media {
+    margin-top: 0;
+  }
+
+  .copyright {
+    width: 85%;
+    display: flex;
+    justify-content: right;
+  }
 }
